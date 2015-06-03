@@ -38,7 +38,8 @@
 |
 */
 
-$route['default_controller'] = "backoffice";
+$route['default_controller'] = "home";
+$route['dashboard'] = "home/dashboard";
 $route['404_override'] = '';
 
 
