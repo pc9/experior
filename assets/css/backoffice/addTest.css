@@ -1,0 +1,59 @@
+.form-control,.btn,.breadcrumb,a.list-group-item,.modal-content{
+	border-radius: 0 !important;
+}
+.form-control:focus,.form-control,.cke_chrome{
+	box-shadow: none !important;
+}
+.navbar-inverse .navbar-brand{
+	color:white;
+}
+input[name="create"]{
+	width:100%;
+	display: block;
+	max-width: 250px;
+	min-width: 70px;
+	margin:10px auto;
+}
+footer{
+	margin:20px auto;
+}
+.modal-body .subSections{
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 15px;
+}
+.modal-body .subSection{
+	padding:5px 25px;
+	background-color: #eee;
+	margin:0 0 10px;
+}
+.modal-body .subSections>.row{
+	margin:0;
+}
+.modal-body .subSections .subSection .row>div{
+	padding:0 5px !important;
+}
+.modal-body .subSections .subSection .row>div:first-child{
+	padding-left: 0 !important;
+}
+.modal-body .subSections .subSection .row>div:last-child{
+	padding-right: 0 !important;
+}
+.modal-dialog {
+    -webkit-transform: scale(0) ;
+    -ms-transform: scale(0);
+    -o-transition: scale(0);
+    transform:  scale(0);
+    -webkit-transition: transform .2s ease-out !important;
+    -moz-transition: transform .2s ease-out !important;
+    -o-transition: transform .2s ease-out !important;
+    transition: transform .2s ease-out !important;
+}
+.modal.in .modal-dialog{
+    -webkit-transform: scale(1) ;
+    -ms-transform: scale(1);
+    -o-transition: scale(1);
+    transform:  scale(1);
+}
+.table-bordered>tbody>tr>td{
+	vertical-align: middle;
+}
