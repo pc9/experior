@@ -17,7 +17,11 @@ class Home extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-
+	public function __construct()
+	{
+		parent::__construct();
+		$this->head = $this->load->view('/common/dashboard_head',array(),true);
+	}
 		
 	public function index()
 	{
@@ -27,8 +31,46 @@ class Home extends CI_Controller {
 
 	public function dashboard()
 	{
+		$data['head'] = $this->head;
+		$this->load->view('dashboard',$data);
+	}
+
+	public function register()
+	{
 		
-		$this->load->view('dashboard');
+		$this->load->view('register');
+	}
+
+	public function contact()
+	{
+		
+		$this->load->view('contact');
+	}
+
+	public function forget_password()
+	{
+		
+		$this->load->view('forget_password');
+	}
+
+	public function about()
+	{
+		
+		$this->load->view('about');
+	}
+
+	public function notifications()
+	{
+		
+		$data['head'] = $this->head;
+		$this->load->view('notifications',$data);
+	}
+
+	public function start_test()
+	{
+		
+		$data['head'] = $this->head;
+		$this->load->view('start_test',$data);
 	}
 
 	

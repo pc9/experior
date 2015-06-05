@@ -40,6 +40,12 @@
 
 $route['default_controller'] = "home";
 $route['dashboard'] = "home/dashboard";
+$route['notifications'] = "home/notifications";
+$route['about'] = "home/about";
+$route['start_test'] = "home/start_test";
+$route['contact'] = "home/contact";
+$route['register'] = "home/register";
+$route['forget_password'] = "home/forget_password";
 $route['404_override'] = '';
 
 
